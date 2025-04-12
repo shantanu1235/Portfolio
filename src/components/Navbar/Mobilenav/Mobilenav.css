@@ -1,0 +1,65 @@
+/* Mobile Menu Styling */
+.mobile-menu {
+    width: 100vw;
+    height: 100vh;
+    display: none; /* Initially hidden */
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10000; /* Ensure it appears above other elements */
+    opacity: 0; /* Hidden by default */
+    box-shadow: 0px 29px 80px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    transition: all 0.3s ease; /* Smooth transition for visibility */
+    transform: translateX(-100vw); /* Slide out of view */
+}
+
+.mobile-menu-container {
+    width: 60vw;
+    height: 100vh;
+    padding: 2rem;
+    background-color: #45316c; /* Uncommented for visibility */
+}
+
+.mobile-menu.active {
+    display: block; /* Make it visible when active */
+    opacity: 1; /* Fully visible */
+    transform: translateX(0); /* Slide into view */
+}
+
+.mobile-menu img {
+    margin-bottom: 3rem;
+    width: 100%; /* Ensure the image scales properly */
+    max-width: 200px; /* Optional: Limit the image size */
+}
+
+.mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+    margin: 0; /* Ensure no extra margin */
+    padding: 0; /* Ensure no extra padding */
+}
+
+.mobile-menu ul li {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.mobile-menu ul li:hover {
+    color: #a993fe; /* Add hover effect for better interactivity */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mobile-menu {
+        display: flex; /* Ensure it displays on smaller screens */
+    }
+    .mobile-menu-container {
+        width: 70vw; /* Adjust width for smaller screens */
+    }
+}
