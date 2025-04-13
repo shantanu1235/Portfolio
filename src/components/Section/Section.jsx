@@ -11,19 +11,19 @@ function Section() {
       <div className='hero-img'>
         <div>
           <div className='tech-icon' >
-            <img src="src\assets\images\science.png" alt="" />
+            <img src="src\assects\images\science.png" alt="" />
       </div>
-      <img src="src\assets\images\my-image.png" alt="" />
+      <img src="src\assects\images\my-image.png" alt="" />
         </div>
         <div>
           <div className='tech-icon'>
-            <img src="src\assets\images\css-3.png" alt="" />
+            <img src="src\assects\images\css-3.png" alt="" />
           </div>
           <div className='tech-icon'>
-            <img src="src\assets\images\html.png" alt="" />
+            <img src="src\assects\images\html.png" alt="" />
           </div>
           <div className='tech-icon'>
-            <img src="src\assets\images\js.png" alt="" />
+            <img src="src\assects\images\js.png" alt="" />
           </div>
         </div>
       </div>
