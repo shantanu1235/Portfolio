@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Navbar.css'
 import Mobilenav from './Mobilenav/Mobilenav'
+import logo from './logo-removebg-preview.png'
 
 
 function Navbar() {
@@ -18,7 +19,7 @@ function Navbar() {
 
       <nav className='nav-wrapper'>
         <div className='nav-content'>   
-            <img className='logo' src="src/components/Navbar/logo-removebg-preview.png" alt="Logo" />
+            <img className='logo' src={logo} alt="Logo" />
             <ul>
               <li><a className='menu-item' href='#Section'>Home</a></li>
               <li><a className='menu-item' href='#Skills'>Skills</a></li>
