@@ -1,5 +1,10 @@
 import React from 'react'
 import './Section.css'
+import scince from '../../assets/images/science.png'
+import css from '../../assets/images/css-3.png'
+import html from '../../assets/images/html.png'  
+import js from '../../assets/images/js.png'
+import myimage from '../../assets/images/my-image.png'
 
 function Section() {
   return (
@@ -11,19 +16,19 @@ function Section() {
       <div className='hero-img'>
         <div>
           <div className='tech-icon' >
-            <img src="src\assects\images\science.png" alt="" />
+            <img src={scince} alt="" />
       </div>
-      <img src="src\assects\images\my-image.png" alt="" />
+      <img src={myimage} alt="" />
         </div>
         <div>
           <div className='tech-icon'>
-            <img src="src\assects\images\css-3.png" alt="" />
+            <img src={css} alt="" />
           </div>
           <div className='tech-icon'>
-            <img src="src\assects\images\html.png" alt="" />
+            <img src={html} alt="" />
           </div>
           <div className='tech-icon'>
-            <img src="src\assects\images\js.png" alt="" />
+            <img src={js} alt="" />
           </div>
         </div>
       </div>

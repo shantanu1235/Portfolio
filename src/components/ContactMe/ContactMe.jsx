@@ -2,6 +2,8 @@ import React from 'react'
 import './ContactMe.css'
 import ContactinfoCard from './ContactinfoCard/ContactinfoCard'
 import ContactForm from './ContactForm/ContactForm'
+import github from '../../assets/images/github.svg'
+import email from '../../assets/images/email.svg'
 
 const ContactMe = () => {
   return (
@@ -10,11 +12,11 @@ const ContactMe = () => {
     <div className="contact-content">
       <div style={{flex:1}}>
         <ContactinfoCard 
-        iconUrl={"./src/assects/images/email.svg"}
+        iconUrl={email}
         text="shantanunigam786@gmail.com"
         />
         <ContactinfoCard 
-        iconUrl={"./src/assects/images/github.svg"}
+        iconUrl={github}
         text="https://github.com/shantanu1235"
         />
       </div>

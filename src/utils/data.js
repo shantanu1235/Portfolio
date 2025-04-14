@@ -1,49 +1,49 @@
-export const SKILLS=[
+import backend from '../assets/images/backend-icon.png';
+import frontend from '../assets/images/frontend-icon.png';
+import tools from '../assets/images/tools-icon.png';
+import softskills from '../assets/images/soft-skills.png';
+
+export const SKILLS = [
     {
-        title:"Frontend",
-        icon:"./src/assets/images/frontend-icon.png",
-        skills:[
-            {skills:'HTML5',percentage:'70%'},
-            {skills:'CSS3',percentage:'80%'},
-            {skills:'JavaScript',percentage:'60%'},
-            {skills:'Reactjs',percentage:'90%'},
+        title: "Frontend",
+        icon: frontend, // Remove curly braces
+        skills: [
+            { skills: 'HTML5', percentage: '70%' },
+            { skills: 'CSS3', percentage: '80%' },
+            { skills: 'JavaScript', percentage: '60%' },
+            { skills: 'Reactjs', percentage: '90%' },
+        ]
+    },
+    {
+        title: "Backend",
+        icon: backend, // Remove curly braces
+        skills: [
+            { skills: 'Nodejs', percentage: '70%' },
+            { skills: 'Expressjs', percentage: '90%' },
+            { skills: 'MongoDB', percentage: '80%' },
+        ]
+    },
+    {
+        title: "Tools",
+        icon: tools, // Remove curly braces
+        skills: [
+            { skills: 'Git&GitHub', percentage: '80%' },
+            { skills: 'webpack', percentage: '70%' },
+            { skills: 'Visual Studio Code', percentage: '90%' },
+            { skills: 'Responsive Design', percentage: '60%' },
+        ]
+    },
+    {
+        title: 'SoftSkills',
+        icon: softskills, // Remove curly braces
+        skills: [
+            { skills: 'Problem Solving', percentage: '80%' },
+            { skills: 'Team Work', percentage: '90%' },
+            { skills: 'Creativity', percentage: '100%' },
+        ]
+    }
+];
 
-            ]
-        },
-        {
-            title:"Backend",
-            icon:'./src/assets/images/backend-icon.png',
-            skills:[
-                {skills:'Nodejs',percentage:'70%'},
-                {skills:'Expressjs',percentage:'90%'},
-                {skills:'MongoDB',percentage:'80%'},
-            ]
-        
-        },
-        {
-            title:"Tools",
-            icon:'./src/assets/images/tools-icon.png',
-            skills:[
-                {skills:'Git&GitHub',percentage:'80%'},
-                {skills:'webpack',percentage:'70%'},
-                {skills:'Visual Studio Code',percentage:'90%'},
-                {skills:'Responsive Design',percentage:'60%'},
-            ]
-                
-        },
-        {
-            title:'SoftSkills',
-            icon:'./src/assets/images/soft-skills.png',
-            skills:[
-                {skills:'Problem Solving',percentage:'80%'},
-                {skills:'Team Work',percentage:'90%'},
-                {skills:'Creativity',percentage:'100%'},
-            ]
-        }
-
-       
-    
-]
 export const PROJECTS=[
     {
         title:'Portfolio Website',
